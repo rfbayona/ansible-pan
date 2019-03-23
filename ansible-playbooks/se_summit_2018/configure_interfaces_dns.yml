@@ -26,6 +26,7 @@
 
     - name: configure ethernet1/1
       panos_interface:
+        operation: "update"
         ip_address: "{{mgmt_ip}}"
         username: "{{admin_username}}"
         password: "{{admin_password}}"
@@ -36,6 +37,7 @@
 
     - name: configure ethernet1/2
       panos_interface:
+        operation: "update"
         ip_address: "{{mgmt_ip}}"
         username: "{{admin_username}}"
         password: "{{admin_password}}"
@@ -50,8 +52,8 @@
         username: "{{admin_username}}"
         password: "{{admin_password}}"
         dns_server_primary: "8.8.8.8"
-        ntp_server_primary: "0.us.pool.ntp.org"
-        ntp_server_secondary: "1.us.pool.ntp.org"
+        #ntp_server_primary: "0.us.pool.ntp.org"
+        #ntp_server_secondary: "1.us.pool.ntp.org"
         timezone: "US/Pacific"
         login_banner: "Secure environment"
         commit: True

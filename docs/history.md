@@ -13,8 +13,11 @@ V3.0.0
 
 *New modules*
 
+<<<<<<< HEAD
 - panos\_facts: Collects device facts
 
+=======
+>>>>>>> 25bcf69b14e7805c7def693338ddd97551890eec
 *Refactored modules*
 
 
